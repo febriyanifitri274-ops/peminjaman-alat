@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f9eeee;
+    color: #594545;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 70px;
+    background: #b97979;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.admin {
+    background: rgba(255,255,255,0.2);
+    padding: 10px 18px;
+    border-radius: 20px;
+}
+
+.logout {
+    display: inline-block;
+
+    background: #d99b9b;
+    color: white;
+
+    padding: 10px 20px;
+    border-radius: 25px;
+
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+}
+/* SIDEBAR */
+.sidebar {
+    width: 240px;
+    height: calc(100vh - 70px);
+    background: #fff7f7;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    padding: 25px 15px;
+}
+
+.sidebar-title {
+    color: #a66a6a;
+    margin: 10px 15px 15px;
+    font-weight: bold;
+}
+
+.sidebar a {
+    display: block;
+    padding: 14px 16px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: #604b4b;
+    border-radius: 12px;
+}
+
+.sidebar a:hover {
+    background: #efd0d0;
+}
+
+.sidebar a.active {
+    background: #c98b8b;
+    color: white;
+}
+
+/* CONTENT */
+.content {
+    margin-left: 250px;
+    padding: 35px;
+}
+
+.page-title {
+    font-size: 36px;
+    color: #594545;
+    margin-bottom: 8px;
+}
+
+.page-subtitle {
+    color: #856565;
+    margin-bottom: 30px;
+}
+
+/* TABLE */
+.table-box {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(120,80,80,0.08);
+}
+
+.table-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #b97979;
+    color: white;
+    padding: 14px;
+    text-align: left;
+}
+
+td {
+    padding: 14px;
+    border-bottom: 1px solid #f0dddd;
+}
+
+tr:hover {
+    background: #fff7f7;
+}
+
+/* TOMBOL PINJAM USER */
+a.btn-pinjam-user {
+    display: inline-block !important;
+    background-color: #b97979 !important;
+    color: #ffffff !important;
+    padding: 8px 18px !important;
+    border: 1px solid #a96565 !important;
+    border-radius: 6px !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    cursor: pointer;
+}
+
+a.btn-pinjam-user:hover {
+    background-color: #a96565 !important;
+    color: #ffffff !important;
+}
+
+/* STATUS USER */
+.status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.status.aktif {
+    background: #d9f2df;
+    color: #3d8b50;
+}
+
+.status.nonaktif {
+    background: #f8d7da;
+    color: #b84c55;
+}
+
+/* AKSI */
+.aksi {
+    white-space: nowrap;
+}
+
+.aksi a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 7px;
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+/* EDIT */
+.btn-edit {
+    background: #c98b8b;
+    color: white !important;
+}
+
+/* HAPUS */
+.btn-hapus {
+    background: #efd0d0;
+    color: #8f4f4f !important;
+}
+
+/* RESET PASSWORD */
+.btn-reset-password {
+    background: #f3dddd;
+    color: #7a5050 !important;
+}
+
+.btn-edit:hover {
+    background: #b97979;
+}
+
+.btn-hapus:hover,
+.btn-reset-password:hover {
+    background: #e5c0c0;
+}
+
+/* Dipindah dari style inline di view */
+.table-box td.text-center {
+    text-align: center;
+}
+

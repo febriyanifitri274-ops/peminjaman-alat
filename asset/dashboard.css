@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f9eeee;
+    color: #594545;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 70px;
+    background: #b97979;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.admin {
+    background: rgba(255,255,255,0.2);
+    padding: 9px 15px;
+    border-radius: 20px;
+}
+
+.logout {
+    display: inline-block;
+
+    background: #d99b9b;
+    color: white;
+
+    padding: 10px 20px;
+    border-radius: 25px;
+
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.logout:hover {
+    background: #cf8c8c;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    width: 240px;
+    height: calc(100vh - 70px);
+
+    background: #fff7f7;
+
+    position: fixed;
+    top: 70px;
+    left: 0;
+
+    padding: 25px 15px;
+
+    z-index: 999;
+}
+
+.sidebar-title {
+    color: #a66a6a;
+
+    margin: 10px 15px 15px;
+
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.sidebar a {
+    display: block;
+
+    padding: 14px 16px;
+    margin-bottom: 8px;
+
+    text-decoration: none;
+    color: #604b4b;
+
+    border-radius: 12px;
+
+    font-size: 16px;
+}
+
+.sidebar a:hover {
+    background: #efd0d0;
+}
+
+.sidebar a.active {
+    background: #c98b8b;
+    color: white;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.main {
+    margin-left: 240px;
+    width: calc(100% - 240px);
+
+    min-height: 100vh;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+    padding: 100px 30px 40px;
+}
+
+.content-header {
+    margin-bottom: 25px;
+}
+
+.content-header h1 {
+    color: #754f4f;
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.content-header p {
+    color: #947777;
+    font-size: 16px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+.card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px rgba(100,60,60,0.08);
+}
+
+.card-icon {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #754f4f;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.number {
+    color: #a66a6a;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* =========================
+   TABLE CARD
+========================= */
+
+.table-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    width: 100%;
+
+    box-shadow: 0 5px 15px rgba(100,60,60,0.08);
+}
+
+.table-header {
+    margin-bottom: 20px;
+}
+
+.table-header h2 {
+    color: #754f4f;
+    font-size: 20px;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+th {
+    background: #efd0d0;
+    color: #594545;
+
+    padding: 14px;
+
+    text-align: left;
+}
+
+td {
+    padding: 14px;
+
+    border-bottom: 1px solid #f0dddd;
+
+    color: #594545;
+}
+
+tr:hover {
+    background: #fff8f8;
+}
+
+.status {
+    font-weight: bold;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .main {
+        margin-left: 200px;
+        width: calc(100% - 200px);
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .content {
+        padding: 90px 15px 30px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        padding: 0 15px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+}
+
+

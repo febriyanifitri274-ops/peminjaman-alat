@@ -1,0 +1,16 @@
+.search-form { display: flex; gap: 10px; margin-bottom: 20px; }
+.search-input {
+    flex: 1; max-width: 380px; padding: 11px 14px;
+    border: 1px solid #e3caca; border-radius: 10px;
+    font-size: 14px; color: #594545; outline: none;
+}
+.search-input:focus { border-color: #b97979; }
+.btn-cari, .btn-reset {
+    display: inline-block; padding: 11px 22px; border: none;
+    border-radius: 10px; font-size: 14px;
+    text-decoration: none; cursor: pointer;
+}
+.btn-cari { background: #b97979; color: white; }
+.btn-cari:hover { background: #a96565; }
+.btn-reset { background: #efd0d0; color: #604b4b; }
+.search-info { margin-bottom: 15px; color: #856565; font-size: 14px; }

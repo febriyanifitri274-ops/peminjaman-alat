@@ -1,0 +1,680 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+body {
+    background: #f9eeee;
+    color: #594545;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    height: 70px;
+    background: #b97979;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.admin {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 9px 15px;
+    border-radius: 20px;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+    width: 240px;
+    height: calc(100vh - 70px);
+
+    background: #fff7f7;
+
+    position: fixed;
+    top: 70px;
+    left: 0;
+
+    padding: 25px 15px;
+
+    overflow-y: auto;
+}
+
+.sidebar-title {
+    color: #a66a6a;
+    margin: 10px 15px 15px;
+    font-weight: bold;
+}
+
+.sidebar a {
+    display: block;
+
+    padding: 14px 16px;
+    margin-bottom: 8px;
+
+    text-decoration: none;
+    color: #604b4b;
+
+    border-radius: 12px;
+}
+
+.sidebar a:hover {
+    background: #efd0d0;
+}
+
+.sidebar a.active {
+    background: #c98b8b;
+    color: white;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.content {
+    margin-left: 240px;
+
+    padding: 100px 30px 40px;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   HEADER HALAMAN
+========================================================= */
+
+.page-top {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.page-title {
+    color: #754f4f;
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.page-subtitle {
+    color: #947777;
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   TOMBOL TAMBAH ALAT
+========================================================= */
+
+.btn-tambah {
+    display: inline-block;
+
+    background: #b97979;
+    color: white !important;
+
+    text-decoration: none !important;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.btn-tambah:hover {
+    background: #a66a6a;
+}
+
+
+/* =========================================================
+   TABLE BOX
+========================================================= */
+
+.table-box {
+    width: 100%;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px rgba(100, 60, 60, 0.08);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   JUDUL TABLE
+========================================================= */
+
+.table-title {
+    color: #754f4f;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-box table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+}
+
+.table-box th {
+    background: #efd0d0;
+
+    color: #594545;
+
+    padding: 14px;
+
+    text-align: left;
+
+    font-weight: bold;
+}
+
+.table-box td {
+    padding: 14px;
+
+    border-bottom: 1px solid #f0dddd;
+
+    color: #594545;
+
+    vertical-align: middle;
+
+    word-wrap: break-word;
+}
+
+.table-box tr:hover {
+    background: #fff8f8;
+}
+
+
+/* =========================================================
+   LEBAR KOLOM TABLE
+========================================================= */
+
+/* No */
+.table-box th:nth-child(1),
+.table-box td:nth-child(1) {
+    width: 5%;
+}
+
+/* Foto */
+.table-box th:nth-child(2),
+.table-box td:nth-child(2) {
+    width: 9%;
+}
+
+/* Nama Alat */
+.table-box th:nth-child(3),
+.table-box td:nth-child(3) {
+    width: 16%;
+}
+
+/* Kategori */
+.table-box th:nth-child(4),
+.table-box td:nth-child(4) {
+    width: 17%;
+}
+
+/* Jumlah */
+.table-box th:nth-child(5),
+.table-box td:nth-child(5) {
+    width: 8%;
+}
+
+/* Harga */
+.table-box th:nth-child(6),
+.table-box td:nth-child(6) {
+    width: 11%;
+}
+
+/* Keterangan */
+.table-box th:nth-child(7),
+.table-box td:nth-child(7) {
+    width: 17%;
+}
+
+/* Aksi */
+.table-box th:nth-child(8),
+.table-box td:nth-child(8) {
+    width: 17%;
+}
+
+
+/* =========================================================
+   FOTO ALAT
+========================================================= */
+
+.foto-alat {
+    width: 80px;
+    height: 80px;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+
+    display: block;
+}
+
+/* =========================
+   KOLOM AKSI
+========================= */
+
+.table-box th:last-child {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.table-box td:last-child {
+    padding-left: 20px;
+    padding-right: 20px;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   TOMBOL AKSI SEJAJAR
+========================= */
+
+.aksi {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   TOMBOL EDIT  (rose muda)
+========================= */
+
+.aksi .btn-edit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #efd0d0;
+    color: #754f4f !important;
+
+    text-decoration: none !important;
+
+    padding: 8px 14px;
+    border-radius: 8px;
+
+    margin: 0;
+}
+
+.aksi .btn-edit:hover {
+    background: #e4bcbc;
+    color: #754f4f !important;
+}
+
+
+/* =========================
+   TOMBOL HAPUS  (rose tua)
+========================= */
+
+.aksi .btn-hapus {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #b97979;
+    color: white !important;
+
+    text-decoration: none !important;
+
+    padding: 8px 14px;
+    border-radius: 8px;
+
+    margin: 0;
+}
+
+.aksi .btn-hapus:hover {
+    background: #a66a6a;
+}
+
+
+/* =========================================================
+   FORM TAMBAH & EDIT
+========================================================= */
+
+.form-box,
+.form-card {
+    width: 100%;
+
+    max-width: 700px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px rgba(100, 60, 60, 0.08);
+
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.form-group,
+.form-row {
+    margin-bottom: 20px;
+}
+
+.form-group label,
+.form-row label {
+    display: block;
+
+    color: #754f4f;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   INPUT FORM
+========================================================= */
+
+.form-group input,
+.form-group select,
+.form-group textarea,
+.form-row input,
+.form-row select,
+.form-row textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #e8cccc;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    color: #594545;
+
+    background: #fffafa;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus,
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+    border-color: #b97979;
+}
+
+.form-group textarea {
+    height: 120px;
+
+    resize: vertical;
+}
+
+.form-row textarea {
+    height: 100px;
+
+    resize: vertical;
+}
+
+
+/* =========================================================
+   FOTO FORM
+========================================================= */
+
+.foto-upload {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.foto-preview {
+    width: 160px;
+    height: 130px;
+    flex-shrink: 0;
+    border: 2px dashed #d9a0a0;
+    border-radius: 12px;
+    background: #fff7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.foto-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.foto-placeholder {
+    text-align: center;
+    color: #8a5a5a;
+    font-size: 13px;
+}
+
+.foto-placeholder span {
+    font-size: 36px;
+    display: block;
+}
+
+.foto-placeholder p {
+    margin: 4px 0 0;
+}
+
+.foto-input {
+    flex: 1;
+}
+
+.foto-input input[type="file"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.foto-input small {
+    display: block;
+    margin-top: 8px;
+    color: #777;
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    .foto-upload { flex-direction: column; }
+}
+/* =========================================================
+   BUTTON FORM
+========================================================= */
+
+.form-buttons,
+.form-button {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+.btn-simpan {
+    border: none;
+
+    background: #b97979;
+
+    color: white;
+
+    padding: 11px 20px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.btn-simpan:hover {
+    background: #a66a6a;
+}
+
+.btn-batal {
+    background: #efd0d0;
+
+    color: #754f4f !important;
+
+    padding: 11px 20px;
+
+    border-radius: 10px;
+
+    text-decoration: none !important;
+}
+
+.btn-batal:hover {
+    background: #e4bcbc;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .content {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .table-box {
+        overflow-x: auto;
+    }
+
+    .table-box table {
+        min-width: 950px;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 200px;
+    }
+
+    .table-box {
+        overflow-x: auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0;
+
+        padding: 90px 15px 30px;
+    }
+
+    .page-top {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .table-box {
+        padding: 20px 15px;
+
+        overflow-x: auto;
+    }
+
+    .table-box table {
+        min-width: 950px;
+    }
+}
+
+/* Halaman error upload foto (dipindah dari style inline di controller) */
+.content.content-error {
+    margin: 40px auto;
+    max-width: 480px;
+}
+
+.form-card .judul-error {
+    color: #b94a4a;
+}

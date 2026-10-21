@@ -1,0 +1,160 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f9eeee;
+    color: #594545;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 70px;
+    background: #b97979;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.admin {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 9px 15px;
+    border-radius: 20px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 240px;
+    height: calc(100vh - 70px);
+    background: #fff7f7;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    padding: 25px 15px;
+}
+
+.sidebar-title {
+    color: #a66a6a;
+    margin: 10px 15px 15px;
+    font-weight: bold;
+}
+
+.sidebar a {
+    display: block;
+    padding: 14px 16px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: #604b4b;
+    border-radius: 12px;
+}
+
+.sidebar a:hover {
+    background: #efd0d0;
+}
+
+.sidebar a.active {
+    background: #c98b8b;
+    color: white;
+}
+
+/* CONTENT */
+.content {
+    margin-left: 240px;
+    padding: 100px 30px 40px;
+}
+
+.page-title {
+    color: #754f4f;
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.page-subtitle {
+    color: #947777;
+    margin-bottom: 25px;
+}
+
+/* TABLE BOX */
+.table-box {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(100, 60, 60, 0.08);
+    overflow-x: auto;
+}
+
+.table-title {
+    color: #754f4f;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* TABLE */
+.table-box table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.table-box th {
+    background: #efd0d0;
+    color: #594545;
+    padding: 14px;
+    text-align: left;
+}
+
+.table-box td {
+    padding: 14px;
+    border-bottom: 1px solid #f0dddd;
+    color: #594545;
+}
+
+.table-box tr:hover {
+    background: #fff5f5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 90px 15px 30px;
+    }
+}
