@@ -87,10 +87,10 @@ if (isset($_POST['simpan'])) {
             <div class="form-buttons">
 
                 <button type="submit"
-                        name="ubah"
-                        class="btn-simpan">
-                    Simpan Perubahan
-                </button>
+        name="simpan"
+        class="btn-simpan">
+    Simpan
+</button>
 
                 <a href="v_kategori.php"
                    class="btn-batal">
